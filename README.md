@@ -4,7 +4,7 @@
 This repository contains the Jupyter Notebooks, external resources, and constructed dataframes used to construct machine learning models for prediction of adverse pregnancy outcomes using the [MIMIC-IV dataset](https://www.nature.com/articles/s41597-022-01899-x).
 
 ## Directory Structure
-- `notebooks` - contains Jupyter Notebooks used for preprocessing, EDA, and model construction
+- `notebooks` - contains Jupyter Notebooks used for preprocessing, EDA, and model construction. Note that the notebooks have numbers appended to the end of their file names. The numbers represent the general order in which the notebooks should be run. While not all notebooks are dependent on the results of another, many of the notebooks do depend on the CSV output of previous notebooks.
 - `final_dfs` - final dataframes used for model construction
 - `resources` - external resources used for data pre-processing, filtering, and mapping
 
