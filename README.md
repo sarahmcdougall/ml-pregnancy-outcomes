@@ -33,7 +33,9 @@ For all classifiers:
 - evaluate via AUC and recall
 
 Constructed models:
-
+- AdaBoost
+- Random Forest
+- Long Short-Term Memory Network (LSTM)
 
 
 ## Relevant Resources
