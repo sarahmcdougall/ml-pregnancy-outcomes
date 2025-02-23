@@ -14,6 +14,8 @@ This repository contains the Jupyter Notebooks, external resources, and construc
 This project utilizes the open-source Multiparameter Intelligent Monitoring in Intensive Care (MIMIC)-IV dataset. The datset is a publicly available database sourced from the electronic health record (EHR) of the Beth Israel Deaconess Medical Center in Massachusetts.
 
 The dataset contains data on a clinical cohort of patients that were admitted to the Emergency Department (ED) or an intensive care unit (ICU) between the years of 2008 and 2019. All patients are greater than 18 years of age and the patient records have been de-identified to abide by HIPAA regulations. The MIMIC-IV dataset takes on a relational structure and contains patient demographic data, health metrics, and mapping tables with the International Classification of Diseases (ICD) codes, Diagnosis Related Groups (DRGs), and the Healthcare Common Procedure Coding System (HCPCS).
+<img width="805" alt="Screen Shot 2024-08-17 at 8 47 48 AM" src="https://github.com/user-attachments/assets/5db944d3-ffba-4908-ba7f-dc5a9bdf6896" />
+
 
 ## Methodology
 ### Data Extraction and Cleaning
@@ -39,8 +41,14 @@ Constructed models:
 
 ## Results
 - Binary LSTM model (predicting adverse outcome v. no adverse outcome) achieved **88.5%** AUC and **94%** recall.
+![binary_lstm_roc](https://github.com/user-attachments/assets/41d2a204-36c4-49d7-9692-5871af300126)
+
 - Multi-label LSTM model (predicts output labels for each adverse outcome) achieved **77%** AUC and **92%** recall.
+![multi_lstm_roc_updated png](https://github.com/user-attachments/assets/bcdd015f-3b0e-443f-9546-4d689c5fd7de)
+
 - Binary AdaBoost model achieved **86%** recall and **88%** precision.
+![admissions_ada_binary_matrix](https://github.com/user-attachments/assets/e1df7dd0-0ebc-4d85-9753-e83657c80b50)
+
 - The models tend to over-predict adverse outcomes (Type I error) compared to missing a diagnosis (Type II error).
 
 
