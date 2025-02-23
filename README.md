@@ -37,6 +37,12 @@ Constructed models:
 - Random Forest
 - Long Short-Term Memory Network (LSTM)
 
+## Results
+- Binary LSTM model (predicting adverse outcome v. no adverse outcome) achieved **88.5%** AUC and **94%** recall.
+- Multi-label LSTM model (predicts output labels for each adverse outcome) achieved **77%** AUC and **92%** recall.
+- Binary AdaBoost model achieved **86%** recall and **88%** precision.
+- The models tend to over-predict adverse outcomes (Type I error) compared to missing a diagnosis (Type II error).
+
 
 ## Relevant Resources
 - [Physionet Page for MIMIC-IV v3.0](https://physionet.org/content/mimiciv/3.0/)
