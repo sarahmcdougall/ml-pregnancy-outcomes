@@ -15,6 +15,26 @@ This project utilizes the open-source Multiparameter Intelligent Monitoring in I
 
 The dataset contains data on a clinical cohort of patients that were admitted to the Emergency Department (ED) or an intensive care unit (ICU) between the years of 2008 and 2019. All patients are greater than 18 years of age and the patient records have been de-identified to abide by HIPAA regulations. The MIMIC-IV dataset takes on a relational structure and contains patient demographic data, health metrics, and mapping tables with the International Classification of Diseases (ICD) codes, Diagnosis Related Groups (DRGs), and the Healthcare Common Procedure Coding System (HCPCS).
 
+## Methodology
+### Data Extraction and Cleaning
+- read data into Postgres
+- filter data on pregnancy diagnosis and gender
+- pre-process diagnosis, procedure, and medication codes - results in a truncated "root" representation of the original code
+- handle outliers by measuring against clinically informed outlier values gathered in ["MIMIC-Extract: A Data Extraction, Preprocessing, and Representation Pipeline for MIMIC-III"](https://arxiv.org/pdf/1907.08322)
+
+### Exploratory Data Analysis
+- explore adverse outcomes by race, marital status, and other demographic factors
+- explore common diagnoses and prescriptions for pregnant patients
+
+### Model Selection and Training
+For all classifiers:
+- apply SMOTE to account for output imbalance
+- apply stratified 5-fold cross-validation to ensure minority classes are represented
+- evaluate via AUC and recall
+
+Constructed models:
+
+
 
 ## Relevant Resources
 - [Physionet Page for MIMIC-IV v3.0](https://physionet.org/content/mimiciv/3.0/)
