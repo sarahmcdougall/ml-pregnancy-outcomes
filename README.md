@@ -10,6 +10,11 @@ This repository contains the Jupyter Notebooks, external resources, and construc
 - `final_dfs` - final dataframes used for model construction
 - `resources` - external resources used for data pre-processing, filtering, and mapping
 
+## Dataset and Sources
+This project utilizes the open-source Multiparameter Intelligent Monitoring in Intensive Care (MIMIC)-IV dataset. The datset is a publicly available database sourced from the electronic health record (EHR) of the Beth Israel Deaconess Medical Center in Massachusetts.
+
+The dataset contains data on a clinical cohort of patients that were admitted to the Emergency Department (ED) or an intensive care unit (ICU) between the years of 2008 and 2019. All patients are greater than 18 years of age and the patient records have been de-identified to abide by HIPAA regulations. The MIMIC-IV dataset takes on a relational structure and contains patient demographic data, health metrics, and mapping tables with the International Classification of Diseases (ICD) codes, Diagnosis Related Groups (DRGs), and the Healthcare Common Procedure Coding System (HCPCS).
+
 
 ## Relevant Resources
 - [Physionet Page for MIMIC-IV v3.0](https://physionet.org/content/mimiciv/3.0/)
