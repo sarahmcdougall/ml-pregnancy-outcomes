@@ -1,6 +1,8 @@
 # Predicting Adverse Pregnancy Outcomes with Machine Learning
 
-## Overview
+## Project Overview
+This project aims to predict 3 adverse pregnancy outcomes - **preeclampsia**, **preterm delivery**, and **obstretric hemorrhaging** - using **supervised machine learning models** trained on health and demographic data.
+
 This repository contains the Jupyter Notebooks, external resources, and constructed dataframes used to construct machine learning models for prediction of adverse pregnancy outcomes using the [MIMIC-IV dataset](https://www.nature.com/articles/s41597-022-01899-x).
 
 ## Directory Structure
